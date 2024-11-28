@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Data Lake App</title>
+</head>
+<body>
+    <h1>Data Lake App</h1>
+    <form action="/search" method="get">
+        <label for="data_type">Tipo de Dados:</label>
+        <select id="data_type" name="data_type">
+            <option value="fiscal_invoice">Fiscal Invoice</option>
+            <option value="guest_checks">Guest Checks</option>
+            <option value="charge_back">Charge Back</option>
+            <option value="transactions">Transactions</option>
+            <option value="cash_management">Cash Management</option>
+        </select><br><br>
+        <label for="bus_dt">Data de Operação:</label>
+        <input type="date" id="bus_dt" name="bus_dt" required><br><br>
+        <label for="store_id">ID da Loja:</label>
+        <input type="text" id="store_id" name="store_id" required><br><br>
+        <button type="submit">Buscar</button>
+    </form>
+    <div id="result"></div>
+</body>
+</html>
